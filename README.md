@@ -7,5 +7,5 @@ To install the project run
 ```
 pip install path/to/tvd_coverage/
 ```
-See the [Robotarium python simulator](https://github.com/robotarium/robotarium_python_simulator) and the Robotarium [website] if you want to try for yourself. Follow their install instructions to use the pycoverage_robotarium code.
+See the [Robotarium python simulator](https://github.com/robotarium/robotarium_python_simulator) and the Robotarium [website](robotarium.gatech.edu) if you want to try for yourself. Follow their install instructions to use the pycoverage_robotarium code.
 
