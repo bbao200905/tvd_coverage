@@ -1,0 +1,10 @@
+*~
+*.pyc
+*.idea
+*.vscode
+*.npy
+*.png
+*.pkl
+data/
+*.egg-info
+build/
