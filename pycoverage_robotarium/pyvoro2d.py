@@ -147,7 +147,7 @@ def phi(x, y, mu, sigma, t, dt=None, c=None, pi=None, sig_dig=4):
     """
     if not (isinstance(sigma, float) or isinstance(sigma, int)):
         if sigma.size == 2:
-            # Phi 6
+            # Phi 5
             tau = 1500 / (2 * np.pi)  # 20 # L: tau
             r = 0.3  # 5
             s1 = sigma[0]  # 1
@@ -168,7 +168,7 @@ def phi(x, y, mu, sigma, t, dt=None, c=None, pi=None, sig_dig=4):
                 )
             )
             return f1 + f2
-    # Phi 5 Density Function
+    # Phi 6 Density Function
     tau = 1000 / (2 * np.pi)  # 20 # L: tau
     r = 0.6  # 5, 0.6 for robotatrium
     s = sigma  # 1
@@ -186,7 +186,7 @@ def phidot(x, y, mu, sigma, mu_past, sigma_past, t, dt, pi=None, sig_dig=4):
     """
 
     if sigma.size == 2:
-        # Phi 6
+        # Phi 5
         tau = 1500 / (2 * np.pi)  # 20 # L: tau
         r = 0.3  # 5
         s1 = sigma[0]  # 1
@@ -240,7 +240,7 @@ def phidot(x, y, mu, sigma, mu_past, sigma_past, t, dt, pi=None, sig_dig=4):
             )
         )
         return f
-    # Phi 5 Density Function
+    # Phi 6 Density Function
     tau = 1000 / (2 * np.pi)  # L: tau
     r = 0.6  # 5, 0.6 for robotatrium
     s = sigma
